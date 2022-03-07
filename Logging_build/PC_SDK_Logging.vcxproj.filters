@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\src\Logging_Library.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\src\Logging_OutputPlugins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\src\Logging_Tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\Logging\Logging-fwd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\Logging\Logging_Library.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\Logging\Logging_OutputPlugins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\Logging\Logging_Tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Downloads\ovr_sdk_win_32.0.0\Logging\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{59B063CC-D86F-3A48-AFA4-2E8B30F91AD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6E20586A-C5D6-399F-A690-8438DBC2032B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

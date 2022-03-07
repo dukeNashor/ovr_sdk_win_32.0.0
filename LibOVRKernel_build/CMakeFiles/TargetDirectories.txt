@@ -1,0 +1,3 @@
+H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build/CMakeFiles/LibOVRKernel.dir
+H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build/CMakeFiles/ALL_BUILD.dir
+H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build/CMakeFiles/ZERO_CHECK.dir

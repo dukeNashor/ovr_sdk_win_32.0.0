@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A5AB183-ADD2-334E-BA8C-599F4D1BA8B2}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>LibOVRKernel</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LibOVRKernel.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LibOVRKernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LibOVRKernel.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LibOVRKernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LibOVRKernel.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LibOVRKernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LibOVRKernel.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LibOVRKernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;$(SolutionDir)..\Logging;$(SolutionDir)..\LibOVR\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;$(SolutionDir)..\Logging;$(SolutionDir)..\LibOVR\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;$(SolutionDir)..\Logging;$(SolutionDir)..\LibOVR\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;$(SolutionDir)..\Logging;$(SolutionDir)..\LibOVR\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel -BH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel -BH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel -BH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel -BH:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/LibOVRKernel_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeCXXCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeRCCompiler.cmake;H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\3.18.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\GL\CAPI_GLE.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\GL\CAPI_GLE.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\GL\CAPI_GLE_GL.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Alg.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Alg.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Allocator.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Allocator.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Array.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Atomic.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Atomic.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Callbacks.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Callbacks.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_CallbacksInternal.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Color.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Compiler.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_ContainerAllocator.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_DLLHelper.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_DebugHelp.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_DebugHelp.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Delegates.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Deque.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Error.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Error.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_File.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_File.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_FileFILE.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Hash.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_JSON.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_JSON.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_KeyCodes.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_List.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Lockless.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_NewOverride.inl" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Nullptr.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_RefCount.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_RefCount.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SharedMemory.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SharedMemory.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Std.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Std.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_StringHash.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String_FormatUtil.cpp" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String_PathUtil.cpp" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SysFile.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SysFile.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_System.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_System.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Threads.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_ThreadsPthread.cpp" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_ThreadsWinAPI.cpp" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Timer.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Timer.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Types.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_UTF8Util.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_UTF8Util.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Win32_IncludeWindows.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\WindowsAFunctions.h" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\LibOVREvents.h" />
+    <None Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\LibOVREvents.man">
+    </None>
+    <ResourceCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\LibOVREvents.rc" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\Tracing.h" />
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\Blt_ps.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel>4.0</ShaderModel>
+      <AdditionalOptions>/Vn Blt_ps /Fh "$(OutDir)../Shaders/Blt_ps.h"</AdditionalOptions>
+    </FXCompile>
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\Blt_ps_ms2.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+      <AdditionalOptions>/Vn Blt_ps_ms2 /Fh "$(OutDir)../Shaders/Blt_ps_ms2.h"</AdditionalOptions>
+    </FXCompile>
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\Blt_vs.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>4.0</ShaderModel>
+      <AdditionalOptions>/Vn Blt_vs /Fh "$(OutDir)../Shaders/Blt_vs.h"</AdditionalOptions>
+    </FXCompile>
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\GrayBlt_ps.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel>4.0</ShaderModel>
+      <AdditionalOptions>/Vn GrayBlt_ps /Fh "$(OutDir)../Shaders/GrayBlt_ps.h"</AdditionalOptions>
+    </FXCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_D3D11_Blitter.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_D3D11_Blitter.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Direct3D.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Direct3D.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_GL_Blitter.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_GL_Blitter.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_ImageWindow.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_ImageWindow.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_LongPollThread.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_LongPollThread.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemGUI.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemGUI.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemInfo.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemInfo.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Watchdog.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Watchdog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel_build\ZERO_CHECK.vcxproj">
+      <Project>{DAAA20B8-67DD-396A-87F6-04E789D08E8B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\GL\CAPI_GLE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Alg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Atomic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Callbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_DebugHelp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_FileFILE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_JSON.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_RefCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Std.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String_FormatUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String_PathUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SysFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_System.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_ThreadsPthread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_ThreadsWinAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_UTF8Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_D3D11_Blitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Direct3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_GL_Blitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_ImageWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_LongPollThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemGUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Watchdog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\GL\CAPI_GLE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\GL\CAPI_GLE_GL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Alg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Callbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_CallbacksInternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_ContainerAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_DLLHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_DebugHelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Delegates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Deque.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_JSON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_KeyCodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Lockless.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_NewOverride.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Nullptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_RefCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SharedMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Std.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_StringHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_SysFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Threads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_UTF8Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\OVR_Win32_IncludeWindows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Kernel\WindowsAFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\LibOVREvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\Tracing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_D3D11_Blitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Direct3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_GL_Blitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_ImageWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_LongPollThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemGUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_SystemInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Util_Watchdog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\Blt_ps.hlsl" />
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\Blt_ps_ms2.hlsl" />
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\Blt_vs.hlsl" />
+    <FXCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Util\Shaders\GrayBlt_ps.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\LibOVREvents.man" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVRKernel\Src\Tracing\LibOVREvents.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A52D83B7-6F9D-3876-B9AA-FDFD373D3BF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{192D0F55-EA15-3500-A5F0-C7A9CA323858}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

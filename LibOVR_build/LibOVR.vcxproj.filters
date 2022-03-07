@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Shim\OVR_CAPIShim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Shim\OVR_CAPI_Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Shim\OVR_StereoProjection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\Extras\OVR_CAPI_Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\Extras\OVR_Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\Extras\OVR_StereoProjection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_CAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_CAPI_Audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_CAPI_D3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_CAPI_GL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_CAPI_Keys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_CAPI_Vk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_ErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Include\OVR_Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\Shim\OVR_CAPI_Prototypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Downloads\ovr_sdk_win_32.0.0\LibOVR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{382C6583-81F3-3074-BDFD-C49E0258E93C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{69CAA79A-BB70-3A4F-98A2-5C62114BB557}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

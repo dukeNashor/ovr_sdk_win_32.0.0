@@ -1,0 +1,3711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72B1B64C-7328-3A54-82BB-641B4B1CD49A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OculusWorldDemo</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OculusWorldDemo.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OculusWorldDemo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OculusWorldDemo.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OculusWorldDemo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OculusWorldDemo.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OculusWorldDemo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OculusWorldDemo.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OculusWorldDemo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;$(SolutionDir)../LibOVRKernel/Src;$(SolutionDir)../LibOVR/Include;$(SolutionDir)../3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bark.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bark.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Barrel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Barrel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bench.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bench.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Book.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Book.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/ChimneyBrick.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/ChimneyBrick.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance Tree.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance Tree.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/FireWood.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/FireWood.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Floor.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Floor.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Fountain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Fountain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseRight.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseRight.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/House_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/House_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Hutch.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Hutch.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/InteriorLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/InteriorLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Iron.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Iron.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Leaves.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Leaves.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/LeftController.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/LeftController.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MetalRusty.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MetalRusty.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MossConcrete.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MossConcrete.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Ocean.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Ocean.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_ExteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_ExteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Rocks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Rocks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/RoofShingles.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/RoofShingles.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Shutter.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Shutter.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky0_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky0_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky4_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky4_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Spore.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Spore.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/StoneWall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/StoneWall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground1.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground1.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground2.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground2.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground3.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground3.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_DistanceLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_DistanceLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/TreeSkinny.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/TreeSkinny.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tree_ TallLightingMap.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tree_ TallLightingMap.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cubemap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cubemap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_CubemapCompressed.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_CubemapCompressed.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Equirect.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Equirect.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Grid.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Grid.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_LoadScreen.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_LoadScreen.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_OculusCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_OculusCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_SitFloorConcrete.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_SitFloorConcrete.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_greenCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_greenCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_redCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_redCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_yellowCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_yellowCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Vase.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Vase.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VaseLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VaseLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Village Houses.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Village Houses.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VillageLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VillageLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Window.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Window.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanksSmall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanksSmall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Plain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Plain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/house_exteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/house_exteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/traxcalibur.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/traxcalibur.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A01LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A01LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A02LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A02LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A03LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A03LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_BLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_BLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_CLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_CLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CommonSrc\Debug\CommonSrc.lib;LibOVR.lib;LibOVRKernel.lib;TinyXml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;PC_SDK_Logging.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../LibOVR_build/$(Configuration)/;$(SolutionDir)../LibOVRKernel_build/$(Configuration)/;$(SolutionDir)../Logging_build/$(Configuration)/;$(SolutionDir)../3rdParty/TinyXml_build/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/Debug/OculusWorldDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/Debug/OculusWorldDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;$(SolutionDir)../LibOVRKernel/Src;$(SolutionDir)../LibOVR/Include;$(SolutionDir)../3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bark.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bark.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Barrel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Barrel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bench.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bench.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Book.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Book.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/ChimneyBrick.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/ChimneyBrick.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance Tree.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance Tree.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/FireWood.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/FireWood.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Floor.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Floor.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Fountain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Fountain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseRight.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseRight.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/House_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/House_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Hutch.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Hutch.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/InteriorLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/InteriorLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Iron.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Iron.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Leaves.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Leaves.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/LeftController.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/LeftController.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MetalRusty.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MetalRusty.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MossConcrete.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MossConcrete.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Ocean.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Ocean.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_ExteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_ExteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Rocks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Rocks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/RoofShingles.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/RoofShingles.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Shutter.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Shutter.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky0_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky0_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky4_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky4_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Spore.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Spore.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/StoneWall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/StoneWall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground1.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground1.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground2.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground2.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground3.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground3.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_DistanceLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_DistanceLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/TreeSkinny.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/TreeSkinny.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tree_ TallLightingMap.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tree_ TallLightingMap.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cubemap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cubemap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_CubemapCompressed.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_CubemapCompressed.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Equirect.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Equirect.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Grid.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Grid.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_LoadScreen.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_LoadScreen.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_OculusCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_OculusCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_SitFloorConcrete.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_SitFloorConcrete.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_greenCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_greenCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_redCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_redCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_yellowCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_yellowCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Vase.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Vase.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VaseLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VaseLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Village Houses.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Village Houses.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VillageLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VillageLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Window.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Window.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanksSmall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanksSmall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Plain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Plain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/house_exteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/house_exteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/traxcalibur.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/traxcalibur.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A01LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A01LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A02LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A02LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A03LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A03LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_BLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_BLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_CLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_CLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CommonSrc\Release\CommonSrc.lib;LibOVR.lib;LibOVRKernel.lib;TinyXml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;PC_SDK_Logging.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../LibOVR_build/$(Configuration)/;$(SolutionDir)../LibOVRKernel_build/$(Configuration)/;$(SolutionDir)../Logging_build/$(Configuration)/;$(SolutionDir)../3rdParty/TinyXml_build/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/Release/OculusWorldDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/Release/OculusWorldDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;$(SolutionDir)../LibOVRKernel/Src;$(SolutionDir)../LibOVR/Include;$(SolutionDir)../3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bark.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bark.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Barrel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Barrel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bench.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bench.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Book.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Book.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/ChimneyBrick.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/ChimneyBrick.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance Tree.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance Tree.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/FireWood.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/FireWood.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Floor.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Floor.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Fountain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Fountain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseRight.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseRight.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/House_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/House_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Hutch.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Hutch.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/InteriorLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/InteriorLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Iron.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Iron.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Leaves.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Leaves.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/LeftController.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/LeftController.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MetalRusty.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MetalRusty.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MossConcrete.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MossConcrete.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Ocean.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Ocean.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_ExteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_ExteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Rocks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Rocks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/RoofShingles.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/RoofShingles.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Shutter.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Shutter.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky0_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky0_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky4_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky4_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Spore.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Spore.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/StoneWall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/StoneWall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground1.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground1.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground2.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground2.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground3.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground3.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_DistanceLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_DistanceLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/TreeSkinny.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/TreeSkinny.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tree_ TallLightingMap.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tree_ TallLightingMap.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cubemap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cubemap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_CubemapCompressed.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_CubemapCompressed.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Equirect.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Equirect.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Grid.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Grid.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_LoadScreen.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_LoadScreen.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_OculusCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_OculusCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_SitFloorConcrete.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_SitFloorConcrete.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_greenCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_greenCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_redCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_redCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_yellowCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_yellowCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Vase.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Vase.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VaseLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VaseLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Village Houses.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Village Houses.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VillageLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VillageLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Window.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Window.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanksSmall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanksSmall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Plain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Plain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/house_exteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/house_exteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/traxcalibur.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/traxcalibur.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A01LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A01LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A02LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A02LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A03LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A03LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_BLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_BLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_CLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_CLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CommonSrc\MinSizeRel\CommonSrc.lib;LibOVR.lib;LibOVRKernel.lib;TinyXml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;PC_SDK_Logging.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../LibOVR_build/$(Configuration)/;$(SolutionDir)../LibOVRKernel_build/$(Configuration)/;$(SolutionDir)../Logging_build/$(Configuration)/;$(SolutionDir)../3rdParty/TinyXml_build/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/MinSizeRel/OculusWorldDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/MinSizeRel/OculusWorldDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;$(SolutionDir)../LibOVRKernel/Src;$(SolutionDir)../LibOVR/Include;$(SolutionDir)../3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo;H:\Downloads\ovr_sdk_win_32.0.0\Samples\CommonSrc\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bark.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bark.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Barrel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Barrel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Bench.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Bench.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Book.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Book.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Chair2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Chair2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/ChimneyBrick.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/ChimneyBrick.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Concrete2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Concrete2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance Tree.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance Tree.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distance3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distance3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Distortion_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Distortion_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/FireWood.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/FireWood.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Floor.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Floor.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Fountain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Fountain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/HouseRight.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/HouseRight.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/House_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/House_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Hutch.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Hutch.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/InteriorLeft.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/InteriorLeft.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorBack.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorBack.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/IntertiorFront.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/IntertiorFront.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Iron.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Iron.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Leaves.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Leaves.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/LeftController.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/LeftController.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MetalRusty.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MetalRusty.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/MossConcrete.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/MossConcrete.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Ocean.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Ocean.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Picture3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Picture3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_ExteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_ExteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Props_InteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Props_InteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Rocks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Rocks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/RoofShingles.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/RoofShingles.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Shutter.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Shutter.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky0_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky0_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky1_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky1_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky2_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky2_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky3_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky3_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Sky4_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Sky4_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Spore.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Spore.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/StoneWall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/StoneWall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Table2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Table2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground1.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground1.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground2.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground2.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain Ground3.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain Ground3.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_DistanceLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_DistanceLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Terrain_YardLightingMap_c.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Terrain_YardLightingMap_c.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/TreeSkinny.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/TreeSkinny.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tree_ TallLightingMap.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tree_ TallLightingMap.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cockpit_Panel.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cockpit_Panel.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Cubemap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Cubemap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_CubemapCompressed.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_CubemapCompressed.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Equirect.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Equirect.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_Grid.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_Grid.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_LoadScreen.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_LoadScreen.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_OculusCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_OculusCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_SitFloorConcrete.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_SitFloorConcrete.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_White.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_White.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_greenCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_greenCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_redCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_redCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Tuscany_yellowCube.tga H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Tuscany_yellowCube.tga
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Vase.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Vase.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VaseLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VaseLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Village Houses.dds" "H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Village Houses.dds"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/VillageLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/VillageLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Window.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Window.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanks.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanks.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/WoodPlanksSmall.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/WoodPlanksSmall.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard3.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard3.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio1.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio1.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Patio2.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Patio2.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/Yard_Plain.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/Yard_Plain.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/house_exteriorLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/house_exteriorLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/traxcalibur.xml H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/traxcalibur.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A01LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A01LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A02LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A02LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_A03LightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_A03LightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_BLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_BLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/Assets/Tuscany/tree_CLightingMap.dds H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/$(Configuration)/Assets/Tuscany/tree_CLightingMap.dds
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\CommonSrc\RelWithDebInfo\CommonSrc.lib;LibOVR.lib;LibOVRKernel.lib;TinyXml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;PC_SDK_Logging.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../LibOVR_build/$(Configuration)/;$(SolutionDir)../LibOVRKernel_build/$(Configuration)/;$(SolutionDir)../Logging_build/$(Configuration)/;$(SolutionDir)../3rdParty/TinyXml_build/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/RelWithDebInfo/OculusWorldDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/RelWithDebInfo/OculusWorldDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/Samples -BH:/Downloads/ovr_sdk_win_32.0.0/Samples_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/Samples -BH:/Downloads/ovr_sdk_win_32.0.0/Samples_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/Samples -BH:/Downloads/ovr_sdk_win_32.0.0/Samples_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/Downloads/ovr_sdk_win_32.0.0/Samples/OculusWorldDemo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Downloads/ovr_sdk_win_32.0.0/Samples -BH:/Downloads/ovr_sdk_win_32.0.0/Samples_build --check-stamp-file H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\OculusWorldDemo\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\OculusWorldDemo.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\OculusWorldDemo.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\OculusWorldDemo_Scene.cpp" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\PerfCapture.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\PerfCapture.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Player.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Player.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Script.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Script.h" />
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Tracker.cpp" />
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Tracker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\ZERO_CHECK.vcxproj">
+      <Project>{B87E4CB7-0307-35C4-8B22-E85D0817A647}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples_build\CommonSrc\CommonSrc.vcxproj">
+      <Project>{6A485D67-80A8-3D96-A970-D8F04BF0B5FA}</Project>
+      <Name>CommonSrc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

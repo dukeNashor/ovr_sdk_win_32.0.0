@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\OculusWorldDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\OculusWorldDemo_Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\PerfCapture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Tracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\OculusWorldDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\PerfCapture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Script.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\Tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Downloads\ovr_sdk_win_32.0.0\Samples\OculusWorldDemo\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EDB0DD47-30FE-39E3-8882-4A69DF2ABD54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C89B6F7D-9C4D-3CD5-A53E-A815993E785E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/CMakeFiles/ALL_BUILD.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/CMakeFiles/ZERO_CHECK.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/CommonSrc/CMakeFiles/CommonSrc.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/GuardianSystemDemo/CMakeFiles/GuardianSystemDemo.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusPerfStatsSample/CMakeFiles/OculusPerfStatsSample.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusRoomTiny/OculusRoomTiny_DX11/CMakeFiles/OculusRoomTiny_DX11.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusRoomTiny/OculusRoomTiny_DX12/CMakeFiles/OculusRoomTiny_DX12.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusRoomTiny/OculusRoomTiny_GL/CMakeFiles/OculusRoomTiny_GL.dir
+H:/Downloads/ovr_sdk_win_32.0.0/Samples_build/OculusWorldDemo/CMakeFiles/OculusWorldDemo.dir
